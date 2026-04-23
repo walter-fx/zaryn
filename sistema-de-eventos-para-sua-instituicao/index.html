@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Sistema de eventos para instituições de ensino: agenda integrada, controle de espaços e aprovações com a ZARYN Eventos." />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta name="author" content="ZARYN Educação">
+    <meta name="theme-color" content="#070b18">
+    <title>ZARYN Eventos | Sistema de eventos para sua instituição</title>
+    <link rel="canonical" href="https://zaryn.com.br/sistema-de-eventos-para-sua-instituicao/">
+    <link rel="alternate" hreflang="pt-BR" href="https://zaryn.com.br/sistema-de-eventos-para-sua-instituicao/">
+    <link rel="alternate" hreflang="x-default" href="https://zaryn.com.br/sistema-de-eventos-para-sua-instituicao/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="ZARYN Educação">
+    <meta property="og:title" content="ZARYN Eventos | Sistema de eventos para sua instituição">
+    <meta property="og:description"
+        content="Centralize eventos, espaços e aprovações em uma plataforma única para instituições de ensino.">
+    <meta property="og:url" content="https://zaryn.com.br/sistema-de-eventos-para-sua-instituicao/">
+    <meta property="og:image" content="https://zaryn.com.br/images/campaign/eventos-hero-01.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ZARYN Eventos | Sistema de eventos para sua instituição">
+    <meta name="twitter:description"
+        content="Mais organização institucional com calendário integrado e gestão inteligente de espaços.">
+    <meta name="twitter:image" content="https://zaryn.com.br/images/campaign/eventos-hero-01.png">
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <script>
+        (function () {
+            var host = (window.location.hostname || '').toLowerCase();
+            var isProductionHost = /(^|\.)zaryn\.com\.br$/.test(host);
+            if (isProductionHost && window.location.protocol !== 'https:') {
+                window.location.replace('https://' + window.location.host + window.location.pathname + window
+                    .location.search + window.location.hash);
+            }
+        })();
+
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/drift-zoom@1.5.1/dist/drift-basic.min.css">
+    <style>
+        :root {
+            --bg: #070b18;
+            --bg-soft: #0d1428;
+            --card: #111a31;
+            --line: rgba(255, 255, 255, .12);
+            --text: #eef4ff;
+            --muted: #a8b5d7;
+            --brand: #58a6ff;
+            --brand-2: #7ab8ff;
+            --ok: #28d29a;
+            --warn: #ffcc57;
+            --radius: 18px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(1000px 500px at 90% -10%, rgba(88, 166, 255, .28), transparent 55%),
+                radial-gradient(900px 420px at 10% -25%, rgba(40, 210, 154, .16), transparent 52%),
+                var(--bg);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: min(1160px, calc(100% - 2rem));
+            margin-inline: auto;
+        }
+
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 30;
+            backdrop-filter: blur(10px);
+            background: rgba(7, 11, 24, .8);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .topbar-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: .9rem 0;
+        }
+
+        .back {
+            color: #d9e7ff;
+            text-decoration: none;
+            border: 1px solid #30456f;
+            padding: .5rem .9rem;
+            border-radius: 999px;
+            font-weight: 700;
+        }
+
+        .mini-cta {
+            display: flex;
+            gap: .6rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 12px;
+            padding: .72rem 1rem;
+            font-weight: 800;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: .45rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--brand), var(--brand-2));
+            color: #061120;
+        }
+
+        .btn-ghost {
+            border: 1px solid #3a5588;
+            color: #d6e7ff;
+            background: transparent;
+        }
+
+        .hero {
+            padding: 2.4rem 0 1.8rem;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.05fr .95fr;
+            gap: 1.4rem;
+            align-items: center;
+        }
+
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            gap: .4rem;
+            font-size: .82rem;
+            border: 1px solid rgba(88, 166, 255, .45);
+            border-radius: 999px;
+            padding: .35rem .7rem;
+            background: rgba(88, 166, 255, .15);
+            color: #cde4ff;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-family: 'Sora', sans-serif;
+            font-size: clamp(1.9rem, 4vw, 3.2rem);
+            margin: .8rem 0 .65rem;
+            line-height: 1.1;
+            letter-spacing: -.02em;
+        }
+
+        .subtitle {
+            font-size: 1.06rem;
+            color: var(--muted);
+            margin: 0;
+        }
+
+        .hero-points {
+            margin: 1rem 0 1.3rem;
+            display: grid;
+            gap: .6rem;
+        }
+
+        .hero-points .item {
+            display: flex;
+            gap: .55rem;
+            align-items: flex-start;
+            color: #dce8ff;
+        }
+
+        .dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 999px;
+            margin-top: .45rem;
+            background: var(--ok);
+            box-shadow: 0 0 0 4px rgba(40, 210, 154, .18);
+        }
+
+        .hero-media {
+            background: linear-gradient(160deg, rgba(88, 166, 255, .2), rgba(17, 26, 49, .55));
+            border: 1px solid rgba(122, 184, 255, .3);
+            border-radius: var(--radius);
+            padding: .75rem;
+        }
+
+        .hero-media img {
+            width: 100%;
+            border-radius: 14px;
+            display: block;
+            border: 1px solid rgba(255, 255, 255, .13);
+        }
+
+        .proof {
+            padding: .4rem 0 1.7rem;
+        }
+
+        .proof-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: .75rem;
+        }
+
+        .proof-card {
+            background: var(--bg-soft);
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: .9rem;
+        }
+
+        .proof-card .num {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: #e9f1ff;
+        }
+
+        .proof-card p {
+            margin: 0;
+            color: var(--muted);
+            font-size: .9rem;
+        }
+
+        .section {
+            padding: 1.2rem 0;
+        }
+
+        .section h2 {
+            font-family: 'Sora', sans-serif;
+            font-size: clamp(1.35rem, 2.3vw, 2rem);
+            margin: 0 0 .65rem;
+        }
+
+        .section p.lead {
+            margin: 0 0 1rem;
+            color: var(--muted);
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: .8rem;
+        }
+
+        .card {
+            background: linear-gradient(180deg, rgba(255, 255, 255, .03), rgba(255, 255, 255, .01));
+            border: 1px solid var(--line);
+            border-radius: 14px;
+            padding: 1rem;
+        }
+
+        .card h3 {
+            margin: 0 0 .4rem;
+            font-size: 1rem;
+        }
+
+        .card p {
+            margin: 0;
+            color: var(--muted);
+            font-size: .94rem;
+        }
+
+        .showcase {
+            margin-top: .8rem;
+            border: 0;
+            border-radius: 0;
+            overflow: visible;
+            background: transparent;
+        }
+
+        .showcase-top {
+            padding: .25rem 0 .75rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: .8rem;
+            flex-wrap: wrap;
+        }
+
+        .showcase-top strong {
+            font-size: 1rem;
+        }
+
+        .mode-switch-wrap {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            color: #d6e7ff;
+            font-size: .82rem;
+            font-weight: 700;
+        }
+
+        .mode-switch {
+            appearance: none;
+            width: 44px;
+            height: 24px;
+            border-radius: 999px;
+            border: 1px solid #3a5588;
+            background: rgba(16, 26, 52, .45);
+            position: relative;
+            cursor: pointer;
+            transition: .2s ease;
+        }
+
+        .mode-switch::before {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #d6e7ff;
+            transition: .2s ease;
+        }
+
+        .mode-switch:checked {
+            background: rgba(88, 166, 255, .45);
+            border-color: #7ab8ff;
+        }
+
+        .mode-switch:checked::before {
+            transform: translateX(20px);
+            background: #ffffff;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 410px;
+        }
+
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0a1226;
+            padding: .35rem;
+            border-radius: 14px;
+        }
+
+        .swiper-slide>img.theme-image {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+        }
+
+        .drift-zoom-pane {
+            z-index: 70;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, .2);
+            background: #0a1226;
+        }
+
+        @media (max-width: 980px) {
+            .drift-bounding-box {
+                border-radius: 50% !important;
+                border-width: 4px !important;
+                box-shadow: 0 0 0 9999px rgba(7, 15, 32, .24);
+                transform: scale(2.7);
+                transform-origin: center center;
+            }
+
+            .drift-zoom-pane {
+                position: fixed !important;
+                left: 50% !important;
+                right: auto !important;
+                top: auto !important;
+                bottom: 14px !important;
+                transform: translateX(-50%) !important;
+                width: min(92vw, 520px) !important;
+                height: min(44vh, 320px) !important;
+                max-width: 92vw !important;
+                max-height: 44vh !important;
+                z-index: 120 !important;
+                border-radius: 12px !important;
+            }
+        }
+
+        .faq {
+            display: grid;
+            gap: .55rem;
+        }
+
+        .faq-item {
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            overflow: hidden;
+            background: var(--bg-soft);
+        }
+
+        .faq-q {
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            color: #e6f0ff;
+            padding: .95rem 1rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .faq-a {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .3s ease;
+            color: var(--muted);
+            padding: 0 1rem;
+        }
+
+        .faq-item.active .faq-a {
+            padding: 0 1rem .9rem;
+        }
+
+        .form-wrap {
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            padding: 1rem;
+            background: linear-gradient(180deg, rgba(88, 166, 255, .08), rgba(17, 26, 49, .35));
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: .7rem;
+        }
+
+        .form-grid .full {
+            grid-column: 1/-1;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            border-radius: 11px;
+            border: 1px solid #324972;
+            background: #0c152c;
+            color: #eff5ff;
+            padding: .72rem .78rem;
+            font: inherit;
+        }
+
+        textarea {
+            min-height: 110px;
+            resize: vertical;
+        }
+
+        .help {
+            color: #9eb2d9;
+            font-size: .82rem;
+            margin-top: .45rem;
+        }
+
+        .sticky-mobile {
+            position: fixed;
+            z-index: 50;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            display: none;
+            gap: .55rem;
+            background: rgba(6, 10, 22, .9);
+            border: 1px solid #2f4778;
+            border-radius: 14px;
+            padding: .55rem;
+            backdrop-filter: blur(8px);
+        }
+
+        .sticky-mobile .btn {
+            flex: 1;
+        }
+
+        .floating-whatsapp {
+            position: fixed;
+            right: 14px;
+            bottom: 18px;
+            width: 62px;
+            height: 62px;
+            border: 0;
+            outline: none;
+            background: transparent;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 55;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+            animation: whatsappPulse 1.8s ease-in-out infinite;
+            transition: transform .2s ease;
+        }
+
+        .floating-whatsapp img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 0;
+        }
+
+        .floating-top {
+            position: fixed;
+            left: 14px;
+            bottom: 18px;
+            width: 52px;
+            height: 52px;
+            border: 1px solid rgba(240, 246, 252, 0.25);
+            background: rgba(22, 27, 34, 0.85);
+            color: #ddecff;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 55;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.32);
+            transition: transform .2s ease, background .2s ease, border-color .2s ease, opacity .2s ease;
+            opacity: 0;
+            pointer-events: none;
+            font-size: 22px;
+        }
+
+        .floating-top.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .floating-whatsapp:hover {
+            transform: translateY(-2px) scale(1.03);
+        }
+
+        .floating-top:hover {
+            transform: translateY(-2px);
+            background: rgba(45, 90, 140, 0.9);
+            border-color: rgba(91, 158, 227, 0.8);
+        }
+
+        @keyframes whatsappPulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45), 0 10px 28px rgba(0, 0, 0, 0.35);
+            }
+
+            70% {
+                box-shadow: 0 0 0 16px rgba(37, 211, 102, 0), 0 10px 28px rgba(0, 0, 0, 0.35);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0), 0 10px 28px rgba(0, 0, 0, 0.35);
+            }
+        }
+
+        .toast {
+            position: fixed;
+            right: 14px;
+            bottom: 18px;
+            z-index: 60;
+            background: #0f1f38;
+            border: 1px solid #37588d;
+            color: #dbe9ff;
+            border-radius: 10px;
+            padding: .68rem .86rem;
+            opacity: 0;
+            transform: translateY(8px);
+            transition: .25s;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 980px) {
+
+            .hero-grid,
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .proof-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+
+            .swiper {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 680px) {
+            .topbar-inner {
+                flex-wrap: wrap;
+            }
+
+            .topbar .mini-cta {
+                display: none;
+            }
+
+            .mini-cta {
+                width: 100%;
+            }
+
+            .mini-cta .btn {
+                flex: 1;
+            }
+
+            .sticky-mobile {
+                display: flex;
+            }
+
+            .floating-whatsapp {
+                display: none;
+            }
+
+            .floating-top {
+                bottom: 86px;
+                left: 10px;
+            }
+
+            body {
+                padding-bottom: 76px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a href="../" class="back">← Voltar para ZARYN</a>
+            <div class="mini-cta">
+                <a class="btn btn-ghost" href="https://wa.me/5511974634116" target="_blank" rel="noopener">WhatsApp</a>
+                <a class="btn btn-primary" href="#form">Quero uma demonstração</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div data-aos="fade-right">
+                    <span class="tag">ZARYN Eventos • IES e instituições educacionais</span>
+                    <h1>Sistema de eventos para sua instituição sem conflitos de agenda</h1>
+                    <p class="subtitle">Transforme a organização de eventos acadêmicos e administrativos com calendário
+                        integrado, gestão de espaços e aprovações em fluxo único.</p>
+                    <div class="hero-points">
+                        <div class="item"><span class="dot"></span><span>Controle de salas, auditórios e áreas externas
+                                em tempo real.</span></div>
+                        <div class="item"><span class="dot"></span><span>Solicitação e aprovação com rastreabilidade por
+                                setor.</span></div>
+                        <div class="item"><span class="dot"></span><span>Redução de retrabalho e comunicação
+                                dispersa.</span></div>
+                    </div>
+                    <div class="mini-cta">
+                        <a class="btn btn-primary" href="#form">Agendar demonstração</a>
+                        <a class="btn btn-ghost" href="#showcase">Ver o sistema</a>
+                    </div>
+                </div>
+                <div class="hero-media" data-aos="fade-left">
+                    <img src="../images/campaign/eventos-hero-01.png" alt="Painel do ZARYN Eventos" />
+                </div>
+            </div>
+        </section>
+
+        <section class="proof">
+            <div class="container proof-grid" data-aos="fade-up">
+                <article class="proof-card">
+                    <div class="num" data-count="87">0</div>
+                    <p>menos conflitos de agenda entre setores</p>
+                </article>
+                <article class="proof-card">
+                    <div class="num" data-count="52">0</div>
+                    <p>ganho de produtividade no planejamento</p>
+                </article>
+                <article class="proof-card">
+                    <div class="num" data-count="100">0</div>
+                    <p>visão centralizada de espaços institucionais</p>
+                </article>
+                <article class="proof-card">
+                    <div class="num" data-count="24">0</div>
+                    <p>suporte com implantação assistida</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container" data-aos="fade-up">
+                <h2>O que sua equipe resolve com o ZARYN Eventos</h2>
+                <p class="lead">Menos improviso operacional. Mais previsibilidade institucional.</p>
+                <div class="grid-3">
+                    <article class="card">
+                        <h3>Agenda única da instituição</h3>
+                        <p>Visualização por data, setor e ambiente para evitar sobreposições.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Fluxo de aprovação configurável</h3>
+                        <p>Cada tipo de evento segue as regras internas da sua instituição.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Governança de uso dos espaços</h3>
+                        <p>Histórico completo de solicitações, aprovações e responsáveis.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="showcase">
+            <div class="container" data-aos="fade-up">
+                <div class="showcase">
+                    <div class="showcase-top">
+                        <strong>ZARYN Eventos em ação</strong>
+                        <div style="display:flex; gap:.6rem; align-items:center;">
+                            <label class="mode-switch-wrap" for="modeToggleEventos">
+                                <span>Modo escuro</span>
+                                <input type="checkbox" class="mode-switch" id="modeToggleEventos" checked>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="swiper campanhasEventos">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="theme-image"
+                                    data-dark="../images/campaign/eventos-feature-01-dark.png"
+                                    data-light="../images/campaign/eventos-feature-01-light.png"
+                                    data-zoom="../images/campaign/eventos-feature-01-dark.png"
+                                    src="../images/campaign/eventos-feature-01-dark.png" alt="Tela principal eventos">
+                            </div>
+                            <div class="swiper-slide"><img class="theme-image"
+                                    data-dark="../images/campaign/eventos-feature-02-dark.png"
+                                    data-light="../images/campaign/eventos-feature-02-light.png"
+                                    data-zoom="../images/campaign/eventos-feature-02-dark.png"
+                                    src="../images/campaign/eventos-feature-02-dark.png"
+                                    alt="Tela de gestão de atendimento"></div>
+                            <div class="swiper-slide"><img class="theme-image"
+                                    data-dark="../images/campaign/eventos-feature-03-dark.png"
+                                    data-light="../images/campaign/eventos-feature-03-light.png"
+                                    data-zoom="../images/campaign/eventos-feature-03-dark.png"
+                                    src="../images/campaign/eventos-feature-03-dark.png" alt="Dashboard institucional">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container" data-aos="fade-up">
+                <h2>Perguntas frequentes</h2>
+                <div class="faq">
+                    <div class="faq-item"><button class="faq-q">Em quanto tempo podemos implantar?</button>
+                        <div class="faq-a">
+                            <p>Normalmente entre 7 e 15 dias, dependendo da configuração dos fluxos e quantidade de
+                                ambientes da instituição.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item"><button class="faq-q">Funciona para múltiplos campi?</button>
+                        <div class="faq-a">
+                            <p>Sim. É possível segmentar por unidade e manter visão consolidada da operação.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item"><button class="faq-q">A equipe recebe treinamento?</button>
+                        <div class="faq-a">
+                            <p>Sim. Treinamento de uso + acompanhamento inicial para garantir adoção real.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="form">
+            <div class="container" data-aos="zoom-in-up">
+                <div class="form-wrap">
+                    <h2 style="margin-top:0;">Solicite uma demonstração personalizada</h2>
+                    <p class="lead">Preencha os dados e nosso time entra em contato com um plano de implementação para
+                        sua instituição.</p>
+                    <form id="leadForm" action="../API/send_mail.php" method="post" novalidate>
+                        <input type="text" name="website"
+                            style="position:absolute;left:-9999px;opacity:0;pointer-events:none;" tabindex="-1"
+                            autocomplete="off">
+                        <input type="hidden" name="form_ts" id="form_ts">
+                        <div class="form-grid">
+                            <input type="text" name="name" placeholder="Nome completo" required>
+                            <input type="email" name="email" placeholder="E-mail" required>
+                            <input type="tel" name="phone" placeholder="WhatsApp" required>
+                            <input type="text" name="institution" placeholder="Instituição" required>
+                            <textarea class="full" name="message"
+                                placeholder="Quais desafios vocês querem resolver com eventos?"></textarea>
+                            <button class="btn btn-primary full" type="submit">Quero receber a demonstração</button>
+                        </div>
+                        <div class="help">Ao enviar, você concorda em receber contato da equipe ZARYN Educação.</div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="sticky-mobile">
+        <a class="btn btn-ghost" href="https://wa.me/5511974634116" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-primary" href="#form">Demonstração</a>
+    </div>
+
+    <a class="floating-whatsapp" href="https://wa.me/5511974634116" target="_blank" rel="noopener"
+        aria-label="Falar no WhatsApp">
+        <img src="../images/logo-whatsapp.png" alt="WhatsApp">
+    </a>
+    <button class="floating-top" id="floatingTop" type="button" onclick="scrollToTop()" aria-label="Voltar ao topo">
+        <span aria-hidden="true">&#8593;</span>
+    </button>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/drift-zoom@1.5.1/dist/Drift.min.js"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "ZARYN Eventos | Sistema de eventos para sua instituição",
+            "url": "https://zaryn.com.br/sistema-de-eventos-para-sua-instituicao/",
+            "description": "Página de solução da ZARYN Eventos para instituições de ensino.",
+            "inLanguage": "pt-BR",
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "ZARYN Educação",
+                "url": "https://zaryn.com.br/"
+            },
+            "about": {
+                "@type": "Service",
+                "name": "ZARYN Eventos",
+                "serviceType": "Gestão de eventos e espaços institucionais",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "ZARYN Educação",
+                    "url": "https://zaryn.com.br/"
+                }
+            }
+        }
+
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                    "@type": "Question",
+                    "name": "Em quanto tempo podemos implantar?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Normalmente entre 7 e 15 dias, dependendo da configuração dos fluxos e quantidade de ambientes da instituição."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Funciona para múltiplos campi?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sim. É possível segmentar por unidade e manter visão consolidada da operação."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "A equipe recebe treinamento?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Sim. Treinamento de uso e acompanhamento inicial para garantir adoção real."
+                    }
+                }
+            ]
+        }
+
+    </script>
+    <script>
+        AOS.init({
+            duration: 700,
+            once: true,
+            offset: 30
+        });
+
+        var eventosSwiper = new Swiper('.campanhasEventos', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            speed: 950,
+            autoplay: {
+                delay: 4200,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            }
+        });
+
+        var modeBtnEventos = document.getElementById('modeToggleEventos');
+        var driftInstances = [];
+
+        function initImageZoom() {
+            driftInstances.forEach(function (instance) {
+                if (instance && typeof instance.disable === 'function') instance.disable();
+            });
+            driftInstances = [];
+            document.querySelectorAll('.theme-image').forEach(function (img) {
+                driftInstances.push(new Drift(img, {
+                    paneContainer: img.closest('.showcase') || document.body,
+                    inlinePane: false,
+                    inlineOffsetY: 10,
+                    containInline: true,
+                    hoverBoundingBox: true,
+                    touchDelay: 120
+                }));
+
+                img.addEventListener('mouseenter', function () {
+                    if (eventosSwiper && eventosSwiper.autoplay) eventosSwiper.autoplay.stop();
+                });
+                img.addEventListener('mouseleave', function () {
+                    if (eventosSwiper && eventosSwiper.autoplay) eventosSwiper.autoplay.start();
+                });
+                img.addEventListener('touchstart', function () {
+                    if (eventosSwiper && eventosSwiper.autoplay) eventosSwiper.autoplay.stop();
+                }, {
+                    passive: true
+                });
+                img.addEventListener('touchend', function () {
+                    if (eventosSwiper && eventosSwiper.autoplay) eventosSwiper.autoplay.start();
+                }, {
+                    passive: true
+                });
+            });
+        }
+
+        function applyThemeImages(isDark) {
+            document.querySelectorAll('.theme-image').forEach(function (img) {
+                var targetSrc = isDark ? img.dataset.dark : img.dataset.light;
+                img.src = targetSrc;
+                img.setAttribute('data-zoom', targetSrc);
+            });
+            initImageZoom();
+        }
+        if (modeBtnEventos) {
+            modeBtnEventos.addEventListener('change', function () {
+                applyThemeImages(modeBtnEventos.checked);
+            });
+        }
+        applyThemeImages(true);
+
+        document.querySelectorAll('.faq-q').forEach(function (q) {
+            q.addEventListener('click', function () {
+                var item = q.parentElement;
+                document.querySelectorAll('.faq-item').forEach(function (i) {
+                    if (i !== item) {
+                        i.classList.remove('active');
+                        i.querySelector('.faq-a').style.maxHeight = null;
+                    }
+                });
+                item.classList.toggle('active');
+                var ans = item.querySelector('.faq-a');
+                ans.style.maxHeight = item.classList.contains('active') ? ans.scrollHeight + 'px' :
+                    null;
+            });
+        });
+
+        function animateCounters() {
+            document.querySelectorAll('[data-count]').forEach(function (el) {
+                var target = parseInt(el.getAttribute('data-count'), 10);
+                var n = 0;
+                var timer = setInterval(function () {
+                    n += Math.max(1, Math.ceil(target / 35));
+                    if (n >= target) {
+                        n = target;
+                        clearInterval(timer);
+                    }
+                    el.textContent = n + '%';
+                }, 28);
+            });
+        }
+        animateCounters();
+
+        function toast(msg) {
+            var t = document.getElementById('toast');
+            t.textContent = msg;
+            t.classList.add('show');
+            setTimeout(function () {
+                t.classList.remove('show');
+            }, 3800);
+        }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        var topBtn = document.getElementById('floatingTop');
+        window.addEventListener('scroll', function () {
+            if (!topBtn) return;
+            topBtn.classList.toggle('show', window.scrollY > 260);
+        });
+
+        var formTs = document.getElementById('form_ts');
+        if (formTs) formTs.value = String(Math.floor(Date.now() / 1000));
+
+        var form = document.getElementById('leadForm');
+        form.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            var btn = form.querySelector('button[type="submit"]');
+            var old = btn.textContent;
+            btn.disabled = true;
+            btn.textContent = 'Enviando...';
+            try {
+                var res = await fetch(form.action, {
+                    method: 'POST',
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest'
+                    },
+                    body: new FormData(form)
+                });
+                var data = await res.json();
+                if (!res.ok || !data.ok) throw new Error((data && data.message) ? data.message :
+                    'Falha ao enviar');
+                toast('Perfeito! Recebemos seu contato e retornaremos em breve.');
+                form.reset();
+                if (formTs) formTs.value = String(Math.floor(Date.now() / 1000));
+            } catch (err) {
+                toast(err.message || 'Não foi possível enviar agora. Tente novamente.');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = old;
+            }
+        });
+
+    </script>
+</body>
+
+</html>

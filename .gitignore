@@ -1,0 +1,6 @@
+*-bkp_*
+API/
+API/logs/*
+API/tmp/*
+*.log
+.DS_Store

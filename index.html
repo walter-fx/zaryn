@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Zaryn Educação - Sistema SaaS de gestão comercial e atendimento educacional. Transforme leads em matrículas com gestão inteligente.">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+    <meta name="author" content="ZARYN Educação">
+    <meta name="theme-color" content="#0D1117">
+    <title>Zaryn Educação - Gestão Comercial e Atendimento Educacional</title>
+    <link rel="canonical" href="https://zaryn.com.br/">
+    <link rel="alternate" hreflang="pt-BR" href="https://zaryn.com.br/">
+    <link rel="alternate" hreflang="x-default" href="https://zaryn.com.br/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="ZARYN Educação">
+    <meta property="og:title" content="ZARYN Educação - Gestão Comercial e Atendimento Educacional">
+    <meta property="og:description"
+        content="Integre captação, atendimento e comunicação interna em uma única plataforma para instituições de ensino.">
+    <meta property="og:url" content="https://zaryn.com.br/">
+    <meta property="og:image" content="https://zaryn.com.br/images/mockup-principal.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ZARYN Educação - Plataforma SaaS para IES">
+    <meta name="twitter:description"
+        content="Tecnologia, consultoria e treinamento para transformar captação e atendimento em resultados sustentáveis.">
+    <meta name="twitter:image" content="https://zaryn.com.br/images/mockup-principal.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script>
+        (function () {
+            var host = (window.location.hostname || '').toLowerCase();
+            var isProductionHost = /(^|\.)zaryn\.com\.br$/.test(host);
+            if (isProductionHost && window.location.protocol !== 'https:') {
+                window.location.replace('https://' + window.location.host + window.location.pathname + window
+                    .location.search + window.location.hash);
+            }
+        })();
+
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://customer-assets.emergentagent.com/job_14080357-2f99-4ac0-abad-d0d2f63d06c8/artifacts/rkgr3c9k_zaryn_logo.svg"
+                        alt="Zaryn Educação" class="logo-image">
+                    <span class="logo-text">Zaryn Educação</span>
+                </div>
+
+                <nav class="nav" id="mainNav">
+                    <button onclick="scrollToSection('hero')">Home</button>
+                    <button onclick="scrollToSection('servicos')">Serviços</button>
+                    <button onclick="scrollToSection('solucoes')">Soluções</button>
+                    <button onclick="scrollToSection('diferenciais')">Diferenciais</button>
+                    <button onclick="scrollToSection('sobre')">Sobre a ZARYN</button>
+                    <button onclick="scrollToSection('faq')">FAQ</button>
+                    <button onclick="scrollToSection('contato')" class="cta-header">
+                        Falar com Especialista
+                    </button>
+                </nav>
+
+                <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M3 12h18M3 6h18M3 18h18" />
+                    </svg>
+                    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" style="display: none;">
+                        <path d="M18 6L6 18M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-animate>
+                    <h1 class="hero-title">
+                        Transforme Leads em Matrículas com Gestão Inteligente
+                    </h1>
+                    <p class="hero-subtitle">
+                        Integre captação, atendimento e comunicação interna em uma única plataforma.
+                        Com o suporte de tecnologia, consultoria e treinamento especializados, sua instituição alcança
+                        maior eficiência operacional, inteligência estratégica e resultados sustentáveis.
+                    </p>
+                    <p class="hero-subtitle" style="font-size: 1rem; opacity: .92;">
+                        A ZARYN é especializada em <strong>IES (Instituições de Ensino Superior)</strong>, com aderência
+                        para operações educacionais técnicas e profissionalizantes.
+                    </p>
+                    <div class="hero-ctas">
+                        <button class="btn cta-primary" onclick="scrollToSection('contato')">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                            </svg>
+                            Agendar Demonstração
+                        </button>
+                        <button class="btn cta-secondary" onclick="scrollToSection('solucoes')">
+                            Ver Funcionalidades
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-image" data-animate>
+                    <div class="hero-slider" id="heroSlider">
+                        <img src="images/mockup-principal.png" alt="Tela principal Zaryn"
+                            class="mockup-image hero-slide is-active">
+                        <img src="images/imagem-chat.png" alt="Tela de chat Zaryn" class="mockup-image hero-slide">
+                        <img src="images/atendimentos.png" alt="Tela de atendimentos Zaryn"
+                            class="mockup-image hero-slide">
+                        <img src="images/indicador-de-desempenho.png" alt="Tela de indicadores de desempenho Zaryn"
+                            class="mockup-image hero-slide">
+                        <img src="images/painel-de-captacao.png" alt="Tela de painel de captação Zaryn"
+                            class="mockup-image hero-slide">
+                        <img src="images/calendario-integrado-e-gestao-de-espacos.png"
+                            alt="Calendário integrado e gestão de espaços agendados" class="mockup-image hero-slide">
+                        <img src="images/gerencie-eventos-com-eficiencia.png"
+                            alt="Gerencie eventos com eficiência e organização" class="mockup-image hero-slide">
+                        <img src="images/process-seletivo-simples-e-colaborativo.png"
+                            alt="Processo seletivo simples e colaborativo" class="mockup-image hero-slide">
+
+                        <button type="button" class="hero-slider-arrow prev" aria-label="Imagem anterior">
+                            <span aria-hidden="true">&#10094;</span>
+                        </button>
+                        <button type="button" class="hero-slider-arrow next" aria-label="Próxima imagem">
+                            <span aria-hidden="true">&#10095;</span>
+                        </button>
+
+                        <div class="hero-slider-dots" id="heroSliderDots"></div>
+                    </div>
+                    <div class="mockup-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-animate>
+                    <svg class="stat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                    <div class="stat-content">
+                        <div class="stat-value">60%</div>
+                        <div class="stat-label">Tempo de resposta reduzido</div>
+                    </div>
+                </div>
+                <div class="stat-item" data-animate>
+                    <svg class="stat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                        <polyline points="17 6 23 6 23 12" />
+                    </svg>
+                    <div class="stat-content">
+                        <div class="stat-value">35%</div>
+                        <div class="stat-label">Aumento na conversão</div>
+                    </div>
+                </div>
+                <div class="stat-item" data-animate>
+                    <svg class="stat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                    </svg>
+                    <div class="stat-content">
+                        <div class="stat-value">45%</div>
+                        <div class="stat-label">Menos retrabalho</div>
+                    </div>
+                </div>
+                <div class="stat-item" data-animate>
+                    <svg class="stat-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg>
+                    <div class="stat-content">
+                        <div class="stat-value">92%</div>
+                        <div class="stat-label">Satisfação da equipe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain & Solution -->
+    <section class="pain-solution" id="problema">
+        <div class="container">
+            <div class="section-grid">
+                <div class="pain-block" data-animate>
+                    <h2 class="section-title">Reconhece esses desafios?</h2>
+                    <div class="pain-list">
+                        <div class="pain-item">
+                            <div class="pain-icon error">✕</div>
+                            <div>
+                                <h3>Leads se perdem no processo</h3>
+                                <p>Candidatos sem resposta rápida desistem e vão para a concorrência</p>
+                            </div>
+                        </div>
+                        <div class="pain-item">
+                            <div class="pain-icon error">✕</div>
+                            <div>
+                                <h3>Equipe sem contexto</h3>
+                                <p>Informações espalhadas em múltiplos sistemas geram retrabalho constante</p>
+                            </div>
+                        </div>
+                        <div class="pain-item">
+                            <div class="pain-icon error">✕</div>
+                            <div>
+                                <h3>Baixa taxa de conversão</h3>
+                                <p>Falta de visibilidade sobre o funil impede ações estratégicas</p>
+                            </div>
+                        </div>
+                        <div class="pain-item">
+                            <div class="pain-icon error">✕</div>
+                            <div>
+                                <h3>Gestão sem indicadores</h3>
+                                <p>Decisões baseadas em feeling, não em dados reais</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solution-block" data-animate>
+                    <h2 class="section-title">A Zaryn resolve tudo isso</h2>
+                    <div class="solution-list">
+                        <div class="solution-item">
+                            <div class="solution-icon success">✓</div>
+                            <div>
+                                <h3>Fluxo unificado de atendimento</h3>
+                                <p>Chat, agenda e CRM integrados. Zero leads perdidos.</p>
+                            </div>
+                        </div>
+                        <div class="solution-item">
+                            <div class="solution-icon success">✓</div>
+                            <div>
+                                <h3>Contexto completo em cada conversa</h3>
+                                <p>Histórico, status e próximos passos sempre visíveis para toda a equipe.</p>
+                            </div>
+                        </div>
+                        <div class="solution-item">
+                            <div class="solution-icon success">✓</div>
+                            <div>
+                                <h3>Indicadores em tempo real</h3>
+                                <p>Dashboard com métricas de captação, conversão e performance individual.</p>
+                            </div>
+                        </div>
+                        <div class="solution-item">
+                            <div class="solution-icon success">✓</div>
+                            <div>
+                                <h3>Decisões baseadas em dados</h3>
+                                <p>Visibilidade total do funil para ações estratégicas certeiras.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluções -->
+    <section class="features" id="solucoes">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <h2 class="section-title-center">Soluções ZARYN</h2>
+                <p class="section-subtitle">
+                    Plataformas SaaS para estruturar processos institucionais com foco em resultado.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" data-animate>
+                    <div class="feature-content" onclick="location.href='processo-seletivo-simples-e-colaborativo/'">
+                        <h3 class="feature-title">ZARYN Captação</h3>
+                        <p class="feature-description"><strong>Gestão de Captação e Processo Seletivo</strong></p>
+                        <p class="feature-description">O ZARYN Captação é uma plataforma desenvolvida para estruturar e
+                            acompanhar toda a jornada do candidato, desde o primeiro contato até a matrícula.</p>
+                        <p class="feature-description"><strong>Principais funcionalidades:</strong></p>
+                        <ul class="feature-description">
+                            <li>Gestão completa do funil de captação;</li>
+                            <li>Acompanhamento da jornada do candidato;</li>
+                            <li>Identificação de pontos de evasão;</li>
+                            <li>Gestão de documentos e etapas do processo seletivo;</li>
+                            <li>Relatórios estratégicos e dashboards gerenciais;</li>
+                            <li>Integração entre os setores de captação e secretaria;</li>
+                            <li>Comunicação centralizada com candidatos.</li>
+                        </ul>
+                        <p class="feature-description"><strong>Benefícios:</strong></p>
+                        <ul class="feature-description">
+                            <li>Maior controle sobre o processo seletivo;</li>
+                            <li>Redução de perdas no funil de captação;</li>
+                            <li>Apoio à tomada de decisão estratégica;</li>
+                            <li>Otimização da conversão de candidatos em alunos.</li>
+                        </ul>
+                        <p class="feature-description">O ZARYN Captação transforma a captação de alunos em um processo
+                            estruturado, orientado por dados e resultados.</p>
+                        <div class="feature-actions">
+                            <a class="feature-more" href="processo-seletivo-simples-e-colaborativo/">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-animate>
+                    <div class="feature-content" onclick="location.href='sistema-de-eventos-para-sua-instituicao/'">
+                        <h3 class="feature-title">ZARYN Eventos</h3>
+                        <p class="feature-description"><strong>Gestão de Eventos e Espaços Institucionais</strong></p>
+                        <p class="feature-description">O ZARYN Eventos centraliza a organização das atividades
+                            institucionais, permitindo a gestão eficiente de eventos e da utilização dos espaços físicos
+                            do campus.</p>
+                        <p class="feature-description"><strong>Principais funcionalidades:</strong></p>
+                        <ul class="feature-description">
+                            <li>Cadastro e gerenciamento de eventos;</li>
+                            <li>Fluxo de aprovação institucional;</li>
+                            <li>Calendário integrado;</li>
+                            <li>Gestão de salas, auditórios e áreas externas;</li>
+                            <li>Controle de conflitos de agenda;</li>
+                            <li>Visualização por setor e ambiente;</li>
+                            <li>Organização de atividades acadêmicas e administrativas.</li>
+                        </ul>
+                        <p class="feature-description"><strong>Benefícios:</strong></p>
+                        <ul class="feature-description">
+                            <li>Melhor aproveitamento da estrutura física;</li>
+                            <li>Redução de conflitos de agenda;</li>
+                            <li>Centralização das informações institucionais;</li>
+                            <li>Maior controle e visibilidade das atividades.</li>
+                        </ul>
+                        <p class="feature-description">O ZARYN Eventos transforma a gestão de eventos em uma operação
+                            organizada, integrada e estratégica.</p>
+                        <div class="feature-actions">
+                            <a class="feature-more" href="sistema-de-eventos-para-sua-instituicao/">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-animate>
+                    <div class="feature-content" onclick="location.href='sistemas-sob-demanda-para-sua-instituicao/'">
+                        <h3 class="feature-title">ZARYN Sistemas sob demanda</h3>
+                        <p class="feature-description"><strong>Desenvolvimento de Sistemas Institucionais Personalizados</strong></p>
+                        <p class="feature-description">O ZARYN Sistemas sob demanda cria soluções digitais sob medida
+                            para organizar processos específicos da instituição, integrando operação, dados e equipes em
+                            fluxos mais claros e eficientes.</p>
+                        <p class="feature-description"><strong>Principais funcionalidades:</strong></p>
+                        <ul class="feature-description">
+                            <li>Mapeamento de processos e regras de negócio;</li>
+                            <li>Desenvolvimento de módulos personalizados;</li>
+                            <li>Dashboards, relatórios e indicadores estratégicos;</li>
+                            <li>Perfis de acesso por equipe, setor ou unidade;</li>
+                            <li>Fluxos de aprovação, acompanhamento e histórico;</li>
+                            <li>Integrações com sistemas existentes quando necessário;</li>
+                            <li>Implantação assistida e treinamento da equipe.</li>
+                        </ul>
+                        <p class="feature-description"><strong>Benefícios:</strong></p>
+                        <ul class="feature-description">
+                            <li>Sistema aderente à rotina real da instituição;</li>
+                            <li>Redução de planilhas, retrabalho e controles paralelos;</li>
+                            <li>Mais previsibilidade, rastreabilidade e gestão por dados;</li>
+                            <li>Escalabilidade para evoluir conforme a operação cresce.</li>
+                        </ul>
+                        <p class="feature-description">O ZARYN Sistemas sob demanda transforma processos internos em
+                            plataformas digitais úteis, simples de operar e preparadas para crescer.</p>
+                        <div class="feature-actions">
+                            <a class="feature-more" href="sistemas-sob-demanda-para-sua-instituicao/">Saber mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Highlight -->
+    <section class="chat-highlight">
+        <div class="container">
+            <div class="highlight-grid">
+                <div class="highlight-image" data-animate>
+                    <img src="images/chat-de-equipe.png" alt="Chat Colaborativo" class="highlight-img">
+                </div>
+                <div class="highlight-content" data-animate>
+                    <div class="highlight-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                        </svg>
+                        Diferencial Competitivo
+                    </div>
+                    <h2 class="highlight-title">Chat que acelera a operação</h2>
+                    <p class="highlight-text">
+                        Não é apenas mais um chat. É o centro de comando da sua equipe comercial.
+                    </p>
+                    <div class="highlight-features">
+                        <div class="highlight-feature">
+                            <svg class="highlight-feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                            </svg>
+                            <div>
+                                <h4>Mensagens de texto, áudio e arquivos</h4>
+                                <p>Tudo no mesmo fluxo, sem trocar de ferramenta</p>
+                            </div>
+                        </div>
+                        <div class="highlight-feature">
+                            <svg class="highlight-feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                            <div>
+                                <h4>Grupos de trabalho inteligentes</h4>
+                                <p>Crie equipes, mencione colegas e mantenha todos alinhados</p>
+                            </div>
+                        </div>
+                        <div class="highlight-feature">
+                            <svg class="highlight-feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="6" />
+                                <circle cx="12" cy="12" r="2" />
+                            </svg>
+                            <div>
+                                <h4>Contexto por conversa</h4>
+                                <p>Histórico completo, status atual e próximas ações sempre visíveis</p>
+                            </div>
+                        </div>
+                        <div class="highlight-feature">
+                            <svg class="highlight-feature-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                            </svg>
+                            <div>
+                                <h4>Respostas rápidas e templates</h4>
+                                <p>Atenda mais candidatos em menos tempo, sem perder qualidade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="kpi-section" id="diferenciais">
+        <div class="container">
+            <div class="kpi-grid">
+                <div class="kpi-content" data-animate>
+                    <div class="highlight-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="12" y1="20" x2="12" y2="10" />
+                            <line x1="18" y1="20" x2="18" y2="4" />
+                            <line x1="6" y1="20" x2="6" y2="16" />
+                        </svg>
+                        Diferenciais ZARYN
+                    </div>
+                    <h2 class="highlight-title">Por que a ZARYN e não outra solução?</h2>
+                    <p class="highlight-text">
+                        Porque unimos tecnologia, estratégia e implantação assistida com especialização no setor
+                        educacional.
+                    </p>
+                    <div class="kpi-list">
+                        <div class="kpi-benefit">
+                            <svg class="kpi-benefit-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="20" x2="18" y2="10" />
+                                <line x1="12" y1="20" x2="12" y2="4" />
+                                <line x1="6" y1="20" x2="6" y2="14" />
+                            </svg>
+                            <div>
+                                <h4>Especialização no setor educacional</h4>
+                                <p>Soluções desenhadas para a realidade de instituições de ensino.</p>
+                            </div>
+                        </div>
+                        <div class="kpi-benefit">
+                            <svg class="kpi-benefit-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2z" />
+                            </svg>
+                            <div>
+                                <h4>Implantação estruturada e assistida</h4>
+                                <p>Com consultoria, treinamento e acompanhamento contínuo.</p>
+                            </div>
+                        </div>
+                        <div class="kpi-benefit">
+                            <svg class="kpi-benefit-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="6" />
+                                <circle cx="12" cy="12" r="2" />
+                            </svg>
+                            <div>
+                                <h4>Foco em resultados institucionais</h4>
+                                <p>Eficiência operacional, escalabilidade e tomada de decisão orientada por dados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kpi-metrics" data-animate>
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-header">
+                                <span class="metric-label">Especialização educacional</span>
+                                <span class="metric-change up">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                                        <polyline points="17 6 23 6 23 12" />
+                                    </svg>
+                                    SaaS
+                                </span>
+                            </div>
+                            <div class="metric-value">100%</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-header">
+                                <span class="metric-label">Soluções personalizadas</span>
+                                <span class="metric-change up">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                                        <polyline points="17 6 23 6 23 12" />
+                                    </svg>
+                                    Ativo
+                                </span>
+                            </div>
+                            <div class="metric-value">360°</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-header">
+                                <span class="metric-label">Integração tecnologia + estratégia</span>
+                                <span class="metric-change up">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                                        <polyline points="17 6 23 6 23 12" />
+                                    </svg>
+                                    Completa
+                                </span>
+                            </div>
+                            <div class="metric-value">End-to-End</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-header">
+                                <span class="metric-label">Suporte e treinamento especializado</span>
+                                <span class="metric-change down">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                                        <polyline points="17 6 23 6 23 12" />
+                                    </svg>
+                                    Contínuo
+                                </span>
+                            </div>
+                            <div class="metric-value">24/7</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-header">
+                                <span class="metric-label">Escalabilidade e inovação</span>
+                                <span class="metric-change down">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                                        <polyline points="17 6 23 6 23 12" />
+                                    </svg>
+                                    Evolução
+                                </span>
+                            </div>
+                            <div class="metric-value">Contínua</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-header">
+                                <span class="metric-label">Compromisso com resultados</span>
+                                <span class="metric-change up">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                                        <polyline points="17 6 23 6 23 12" />
+                                    </svg>
+                                    Foco
+                                </span>
+                            </div>
+                            <div class="metric-value">Institucional</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="benefits" id="servicos">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <h2 class="section-title-center">Serviços Especializados</h2>
+                <p class="section-subtitle">
+                    Tecnologia com suporte estratégico para gerar eficiência institucional contínua.
+                </p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card" data-animate>
+                    <div class="benefit-content">
+                        <h3 class="benefit-title">Consultoria Educacional</h3>
+                        <p class="benefit-description">Oferecemos soluções estratégicas para otimizar a gestão e os
+                            processos institucionais.</p>
+                        <ul class="benefit-description">
+                            <li>Diagnóstico institucional;</li>
+                            <li>Estruturação de processos administrativos e acadêmicos;</li>
+                            <li>Planejamento estratégico;</li>
+                            <li>Governança e organização institucional;</li>
+                            <li>Apoio à tomada de decisão.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="benefit-card" data-animate>
+                    <div class="benefit-content">
+                        <h3 class="benefit-title">Treinamento de Equipes</h3>
+                        <p class="benefit-description">Capacitamos profissionais para maximizar o desempenho
+                            institucional.</p>
+                        <ul class="benefit-description">
+                            <li>Utilização das plataformas ZARYN;</li>
+                            <li>Atendimento e relacionamento com alunos;</li>
+                            <li>Captação e conversão de candidatos;</li>
+                            <li>Gestão educacional e administrativa;</li>
+                            <li>Eficiência operacional e produtividade.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="benefit-card" data-animate>
+                    <div class="benefit-content">
+                        <h3 class="benefit-title">Suporte Especializado</h3>
+                        <p class="benefit-description">Acompanhamento contínuo para garantir o sucesso da implementação.
+                        </p>
+                        <ul class="benefit-description">
+                            <li>Suporte técnico permanente;</li>
+                            <li>Atualizações e melhorias do sistema;</li>
+                            <li>Atendimento especializado;</li>
+                            <li>Acompanhamento estratégico.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sobre a ZARYN -->
+    <section class="testimonials" id="sobre">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <h2 class="section-title-center">Sobre a ZARYN</h2>
+                <p class="section-subtitle">
+                    A ZARYN Educação nasceu com o propósito de transformar a gestão das instituições de ensino por meio
+                    da tecnologia, da estratégia e da inovação.
+                </p>
+                <p class="section-subtitle">
+                    Somos uma empresa SaaS especializada no setor educacional, dedicada ao desenvolvimento de soluções
+                    que integram sistemas, processos e pessoas, promovendo eficiência, organização e crescimento
+                    sustentável.
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card mvv-card" data-animate>
+                    <div class="testimonial-content">
+                        <div class="mvv-kicker">Propósito</div>
+                        <h3 class="mvv-title">Missão</h3>
+                        <p class="testimonial-text mvv-text">Transformar a gestão educacional por meio de soluções
+                            tecnológicas e estratégicas inovadoras.</p>
+                    </div>
+                </div>
+                <div class="testimonial-card mvv-card" data-animate>
+                    <div class="testimonial-content">
+                        <div class="mvv-kicker">Direção</div>
+                        <h3 class="mvv-title">Visão</h3>
+                        <p class="testimonial-text mvv-text">Ser referência nacional em soluções SaaS para o setor
+                            educacional.</p>
+                    </div>
+                </div>
+                <div class="testimonial-card mvv-card" data-animate>
+                    <div class="testimonial-content">
+                        <div class="mvv-kicker">Cultura</div>
+                        <h3 class="mvv-title">Valores</h3>
+                        <div class="mvv-tags">
+                            <span>Inovação</span>
+                            <span>Excelência</span>
+                            <span>Ética</span>
+                            <span>Compromisso com resultados</span>
+                            <span>Valorização da educação</span>
+                            <span>Foco no cliente</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-animate>
+                <h2 class="cta-title">Pronto para transformar sua operação comercial?</h2>
+                <p class="cta-text">
+                    Agende uma demonstração personalizada e veja a Zaryn em ação.
+                    Sem compromisso, sem complicação.
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn cta-primary" onclick="scrollToSection('contato')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg>
+                        Solicitar Demonstração
+                    </button>
+                    <button class="btn cta-whatsapp" onclick="openWhatsApp()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        Falar no WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <h2 class="section-title-center">Perguntas Frequentes</h2>
+                <p class="section-subtitle">
+                    Tudo que você precisa saber sobre a Zaryn
+                </p>
+            </div>
+
+            <div class="faq-container" data-animate>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            Quanto tempo leva para implementar a Zaryn na minha instituição?
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>A implementação básica pode ser feita em até 7 dias úteis. Isso inclui configuração
+                                inicial, importação de base, treinamento da equipe e início da operação. Projetos mais
+                                complexos podem levar de 2 a 4 semanas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            A equipe recebe treinamento?
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! Oferecemos treinamento completo para todos os usuários, incluindo sessões ao vivo,
+                                material de apoio em vídeo e documentação detalhada. Além disso, nosso suporte está
+                                sempre disponível para tirar dúvidas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            Como funciona a segurança dos dados?
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Todos os dados são armazenados em servidores seguros com criptografia de ponta a ponta.
+                                Seguimos as normas da LGPD e realizamos backups automáticos diários. Você tem total
+                                controle sobre quem acessa cada informação.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            O sistema funciona em múltiplas unidades?
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! A Zaryn foi desenvolvida para operar com múltiplas unidades, permitindo visão
+                                consolidada e gestão individual por unidade. Cada unidade pode ter seus próprios
+                                usuários, permissões e indicadores específicos.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            Vocês oferecem suporte contínuo?
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim, nosso time de suporte está disponível por chat, email e telefone em horário
+                                comercial. Para clientes premium, oferecemos atendimento prioritário e suporte
+                                estendido.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            É possível integrar com outros sistemas?
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! A Zaryn possui APIs para integração com sistemas de gestão acadêmica, CRMs,
+                                ferramentas de email marketing e plataformas de pagamento. Consulte nosso time sobre
+                                integrações específicas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            Posso importar minha base atual de candidatos?
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! O sistema permite importação via planilha Excel com validação automática. Você
+                                recebe um relatório completo de registros inseridos e atualizados, mantendo todo o
+                                histórico preservado.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            Quanto tempo levo para ver resultados?
+                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Muitos clientes reportam melhorias imediatas na organização e comunicação da equipe.
+                                Resultados mensuráveis em conversão e velocidade de atendimento costumam aparecer nas
+                                primeiras 2 a 4 semanas de uso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form" id="contato">
+        <div class="container">
+            <div class="form-grid">
+                <div class="form-info" data-animate>
+                    <h2 class="form-title">Vamos conversar?</h2>
+                    <p class="form-subtitle">
+                        Entre em contato para conhecer as soluções ZARYN e receber um diagnóstico inicial da sua
+                        operação.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            <div>
+                                <div class="contact-label">Telefone</div>
+                                <div class="contact-value">
+                                    <a href="tel:+5511974634116" style="color:inherit;text-decoration:none;">(11)
+                                        97463-4116</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">
+                                    <a href="mailto:contato@zaryn.com.br"
+                                        style="color:inherit;text-decoration:none;">contato@zaryn.com.br</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="contact-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            <div>
+                                <div class="contact-label">WhatsApp</div>
+                                <div class="contact-value">
+                                    <a href="https://wa.me/5511974634116" target="_blank" rel="noopener noreferrer"
+                                        style="color:inherit;text-decoration:none;">+55 11 97463-4116</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-card" data-animate>
+                    <form class="contact-form-fields" id="contactForm" action="API/send_mail.php" method="post"
+                        onsubmit="handleSubmit(event)" novalidate>
+                        <input type="text" name="website" id="website" autocomplete="off" tabindex="-1"
+                            style="position:absolute;left:-9999px;opacity:0;pointer-events:none;" aria-hidden="true">
+                        <input type="hidden" name="form_ts" id="form_ts">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nome completo</label>
+                            <input id="name" type="text" name="name" placeholder="Seu nome" required class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email corporativo</label>
+                            <input id="email" type="email" name="email" placeholder="seu@email.com" required
+                                class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Telefone</label>
+                            <input id="phone" type="tel" name="phone" placeholder="(11) 99999-9999" required
+                                class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="institution" class="form-label">Instituição</label>
+                            <input id="institution" type="text" name="institution" placeholder="Nome da sua instituição"
+                                required class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensagem (opcional)</label>
+                            <textarea id="message" name="message"
+                                placeholder="Conte-nos um pouco sobre suas necessidades" rows="4"
+                                class="form-input"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn form-submit">
+                            Solicitar Demonstração
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13" />
+                                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <button class="floating-whatsapp" type="button" onclick="openWhatsApp()" aria-label="Falar no WhatsApp">
+        <img src="images/logo-whatsapp.png" alt="WhatsApp">
+        <span class="floating-whatsapp-badge" aria-hidden="true">3</span>
+    </button>
+    <button class="floating-top" type="button" onclick="scrollToTop()" aria-label="Voltar ao topo">
+        <span aria-hidden="true">&#8593;</span>
+    </button>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="https://customer-assets.emergentagent.com/job_14080357-2f99-4ac0-abad-d0d2f63d06c8/artifacts/rkgr3c9k_zaryn_logo.svg"
+                            alt="Zaryn Educação" class="footer-logo-image">
+                        <span class="footer-logo-text">Zaryn Educação</span>
+                    </div>
+                    <p class="footer-description">
+                        Soluções SaaS para transformar a gestão educacional com tecnologia, estratégia e inovação.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Soluções</h4>
+                        <button onclick="scrollToSection('solucoes')" class="footer-link">ZARYN Captação</button>
+                        <button onclick="scrollToSection('solucoes')" class="footer-link">ZARYN Eventos</button>
+                        <button onclick="scrollToSection('solucoes')" class="footer-link">ZARYN Sistemas sob demanda</button>
+                        <button onclick="scrollToSection('diferenciais')" class="footer-link">Diferenciais</button>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Serviços</h4>
+                        <button onclick="scrollToSection('servicos')" class="footer-link">Consultoria
+                            Educacional</button>
+                        <button onclick="scrollToSection('servicos')" class="footer-link">Treinamento de
+                            Equipes</button>
+                        <button onclick="scrollToSection('servicos')" class="footer-link">Suporte Especializado</button>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Institucional</h4>
+                        <button onclick="scrollToSection('sobre')" class="footer-link">Sobre a ZARYN</button>
+                        <button onclick="scrollToSection('faq')" class="footer-link">FAQ</button>
+                        <button onclick="scrollToSection('contato')" class="footer-link">Contato</button>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">Contato</h4>
+                        <div class="footer-contact">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            <span>zaryn.com.br</span>
+                        </div>
+                        <div class="footer-contact">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            <span>(+55 11 97463-4116)</span>
+                        </div>
+                        <div class="footer-contact">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            <span>contato@zaryn.com.br</span>
+                        </div>
+                        <button class="btn footer-whatsapp" onclick="openWhatsApp()">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                            </svg>
+                            WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="termos-de-uso/" class="footer-legal-link">Termos de Uso</a>
+                    <span class="footer-separator">•</span>
+                    <a href="politica-de-privacidade/" class="footer-legal-link">Política de Privacidade</a>
+                    <span class="footer-separator">•</span>
+                    <a href="lgpd/" class="footer-legal-link">LGPD</a>
+                </div>
+                <div class="footer-copyright">
+                    © 2025 ZARYN Educação. Todos os direitos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "ZARYN Educação",
+            "url": "https://zaryn.com.br/",
+            "logo": "https://zaryn.com.br/images/favicon.png",
+            "email": "contato@zaryn.com.br",
+            "telephone": "+55-11-97463-4116",
+            "sameAs": [
+                "https://wa.me/5511974634116"
+            ]
+        }
+
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "ZARYN Educação",
+            "url": "https://zaryn.com.br/",
+            "inLanguage": "pt-BR"
+        }
+
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "ZARYN Educação",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "description": "Plataforma SaaS para captação, atendimento e comunicação interna em instituições de ensino.",
+            "offers": {
+                "@type": "Offer",
+                "priceCurrency": "BRL",
+                "availability": "https://schema.org/InStock"
+            },
+            "provider": {
+                "@type": "Organization",
+                "name": "ZARYN Educação",
+                "url": "https://zaryn.com.br/"
+            }
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
