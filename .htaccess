@@ -1,0 +1,5 @@
+DirectoryIndex index.html
+RewriteEngine On
+
+# Avoid Apache DirectorySlash downgrading HTTPS links to HTTP on the hosted domain.
+RewriteRule ^(sistemas-sob-demanda-para-sua-instituicao|sistema-de-eventos-para-sua-instituicao|processo-seletivo-simples-e-colaborativo|politica-de-privacidade|termos-de-uso|lgpd)$ https://zaryn.com.br/$1/ [R=301,L]
